@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wavelet — Generate video, image & voice with AI</title>
+<meta name="description" content="Wavelet is an AI creation platform for turning text and images into video, artwork, and natural voiceovers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 32 32" fill="none">
+        <path d="M2 20C6 20 6 12 10 12C14 12 14 20 18 20C22 20 22 12 26 12C28 12 29 13 30 14" stroke="url(#g1)" stroke-width="2.4" stroke-linecap="round"/>
+        <defs><linearGradient id="g1" x1="2" y1="12" x2="30" y2="20"><stop stop-color="#7C6CF0"/><stop offset="1" stop-color="#4FD1E8"/></linearGradient></defs>
+      </svg>
+      Wavelet
+    </a>
+    <div class="nav-links">
+      <a href="#create">Create</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#tools">Tools</a>
+      <a href="#faq">FAQ</a>
+      <a href="premium.html">Premium</a>
+    </div>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost">Log in</a>
+      <a href="premium.html" class="btn btn-primary">Get started</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="create">
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Now generating with Wavelet Motion v3</div>
+      <h1>Describe a moment.<br><em>Wavelet</em> brings it to motion.</h1>
+      <p class="hero-sub">One platform for text-to-video, image-to-video, AI art, and natural-sounding voiceovers — built for people who create for a living, and people just getting started.</p>
+      <div class="hero-actions">
+        <a href="premium.html" class="btn btn-wave">Start creating free</a>
+        <a href="#gallery" class="btn btn-ghost">See what's possible</a>
+      </div>
+      <p class="hero-note">No credit card needed · 5 free generations every week</p>
+    </div>
+    <div class="hero-visual">
+      <div class="frame frame-c"><div class="frame-shimmer"></div></div>
+      <div class="frame frame-a"><div class="frame-shimmer"></div><span class="frame-tag">text → video · 8s</span></div>
+      <div class="frame frame-b"><div class="frame-shimmer"></div><span class="frame-tag">image → video · loop</span></div>
+    </div>
+  </div>
+</header>
+
+<svg class="wave-divider" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30C240 60 480 0 720 20C960 40 1200 10 1440 30V60H0V30Z" fill="#14151D"/></svg>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Made entirely by the community</h2>
+      <p>A rolling look at what people are rendering on Wavelet right now — every frame started as a sentence.</p>
+    </div>
+  </div>
+  <div class="marquee">
+    <div class="marquee-track" id="track1">
+      <div class="tile" style="background:linear-gradient(155deg,#3a2f78,#161226)"><span>Concept art</span></div>
+      <div class="tile" style="background:linear-gradient(155deg,#134a52,#0a1c20)"><span>Product design</span></div>
+      <div class="tile" style="background:linear-gradient(155deg,#7a3e2e,#241511)"><span>Architecture</span></div>
+      <div class="tile" style="background:linear-gradient(155deg,#4a3a70,#181422)"><span>Portrait</span></div>
+      <div class="tile" style="background:linear-gradient(155deg,#1f5a4d,#0c1e1a)"><span>Illustration</span></div>
+      <div class="tile" style="background:linear-gradient(155deg,#5c2f5f,#1c1220)"><span>Game design</span></div>
+    </div>
+  </div>
+  <div class="marquee">
+    <div class="marquee-track reverse" id="track2">
+      <div class="tile" style="background:linear-gradient(155deg,#2f4a78,#101a2b)"><span>Video · dance</span></div>
+      <div class="tile" style="background:linear-gradient(155deg,#6b3a2f,#221410)"><span>Video · cinematic</span></div>
+      <div class="tile" style="background:linear-gradient(155deg,#2f7860,#0e2019)"><span>Logo & icon</span></div>
+      <div class="tile" style="background:linear-gradient(155deg,#4f2f78,#161029)"><span>Space design</span></div>
+      <div class="tile" style="background:linear-gradient(155deg,#78632f,#241f0f)"><span>Photography</span></div>
+      <div class="tile" style="background:linear-gradient(155deg,#2f5578,#101d2b)"><span>Video · effects</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="tools" id="tools">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Every format, one workspace</h2>
+      <p>Move between video, image, and voice without switching tools or losing your creative thread.</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <svg class="tool-icon" viewBox="0 0 40 40" fill="none"><rect x="4" y="8" width="32" height="24" rx="4" stroke="#9D91F5" stroke-width="1.6"/><path d="M17 16l8 4-8 4v-8z" fill="#9D91F5"/></svg>
+        <h3>Text to video</h3>
+        <p>Write a scene and Wavelet directs it — camera movement, lighting, and pacing included.</p>
+      </div>
+      <div class="tool-card">
+        <svg class="tool-icon" viewBox="0 0 40 40" fill="none"><rect x="5" y="7" width="30" height="22" rx="3" stroke="#4FD1E8" stroke-width="1.6"/><circle cx="14" cy="15" r="2.5" fill="#4FD1E8"/><path d="M8 26l8-8 6 6 5-5 8 8" stroke="#4FD1E8" stroke-width="1.6"/></svg>
+        <h3>Image to video</h3>
+        <p>Bring a still photo or artwork to life with natural, physically believable motion.</p>
+      </div>
+      <div class="tool-card">
+        <svg class="tool-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="15" stroke="#FF8A5B" stroke-width="1.6"/><path d="M20 12v16M14 16v8M26 16v8" stroke="#FF8A5B" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>Text to image</h3>
+        <p>Generate high-fidelity artwork and product shots from a single descriptive prompt.</p>
+      </div>
+      <div class="tool-card">
+        <svg class="tool-icon" viewBox="0 0 40 40" fill="none"><rect x="10" y="6" width="20" height="28" rx="10" stroke="#9D91F5" stroke-width="1.6"/><path d="M14 20a6 6 0 0012 0" stroke="#9D91F5" stroke-width="1.6"/></svg>
+        <h3>AI voiceover</h3>
+        <p>Turn a script into a natural voice track, or clone a tone for consistent narration.</p>
+      </div>
+      <div class="tool-card">
+        <svg class="tool-icon" viewBox="0 0 40 40" fill="none"><path d="M6 24l6-10 6 6 5-8 11 16" stroke="#4FD1E8" stroke-width="1.6" stroke-linejoin="round" fill="none"/></svg>
+        <h3>Video editor</h3>
+        <p>Trim, layer, and grade generated clips into a finished sequence in the browser.</p>
+      </div>
+      <div class="tool-card">
+        <svg class="tool-icon" viewBox="0 0 40 40" fill="none"><rect x="6" y="10" width="28" height="20" rx="4" stroke="#FF8A5B" stroke-width="1.6"/><path d="M6 24l7-6 5 4 6-8 10 10" stroke="#FF8A5B" stroke-width="1.6"/></svg>
+        <h3>Style effects</h3>
+        <p>Apply one-click looks — film grain, anime, claymation, and dozens more — to any clip.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="engines">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Pick the engine that fits the shot</h2>
+      <p>Wavelet routes your prompt across specialised rendering engines, or you can choose one yourself.</p>
+    </div>
+    <div class="engine-row">
+      <div class="engine-card">
+        <div class="engine-dot" style="background:linear-gradient(155deg,#7C6CF0,#4FD1E8)"></div>
+        <h3>Motion Pro</h3>
+        <p>Fluid character movement and high motion complexity.</p>
+      </div>
+      <div class="engine-card">
+        <div class="engine-dot" style="background:linear-gradient(155deg,#FF8A5B,#7C6CF0)"></div>
+        <h3>Cinema Long</h3>
+        <p>Cinematic lighting for longer, narrative scenes.</p>
+      </div>
+      <div class="engine-card">
+        <div class="engine-dot" style="background:linear-gradient(155deg,#4FD1E8,#2F7860)"></div>
+        <h3>Flash Preview</h3>
+        <p>Low-latency drafts to iterate on a concept fast.</p>
+      </div>
+      <div class="engine-card">
+        <div class="engine-dot" style="background:linear-gradient(155deg,#9D91F5,#5c2f5f)"></div>
+        <h3>Voice Studio</h3>
+        <p>Multilingual narration and voice cloning.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vision">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Why Wavelet</div>
+      <h2>Built around the moment an idea becomes real</h2>
+      <ul class="vision-list">
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#4FD1E8" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="#4FD1E8" stroke-width="1.4"/></svg> A shared library so every render can be revisited, remixed, or shared.</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#4FD1E8" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="#4FD1E8" stroke-width="1.4"/></svg> Daily free credits, so casual creators aren't locked out.</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#4FD1E8" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="#4FD1E8" stroke-width="1.4"/></svg> A community feed for feedback, challenges, and collaboration.</li>
+        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#4FD1E8" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="#4FD1E8" stroke-width="1.4"/></svg> Studio-grade tools that stay usable for a first-time creator.</li>
+      </ul>
+    </div>
+    <div class="vision-visual"></div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="section-head">
+    <h2>Frequently asked</h2>
+  </div>
+
+  <div class="faq-item open">
+    <button class="faq-q">How do I generate my first video<span class="plus"></span></button>
+    <div class="faq-a" style="max-height:200px"><p>Pick a tool from the Create menu, describe what you want to see, and choose an engine. Most drafts render in under a minute, and you can refine the prompt as many times as you like before spending a credit on a final render.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q">Is Wavelet free to use<span class="plus"></span></button>
+    <div class="faq-a"><p>Yes — everyone gets free weekly credits for standard-quality generations. Higher resolutions, longer clips, and priority rendering are part of Wavelet Premium.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q">Can I use my renders commercially<span class="plus"></span></button>
+    <div class="faq-a"><p>Content made on a Premium plan comes with a commercial usage licence. Free-tier renders are for personal, non-commercial use — see the plan comparison for details.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q">What happens to my generation history<span class="plus"></span></button>
+    <div class="faq-a"><p>Every render is saved privately to your library by default. You choose if and when to publish a piece to the community gallery.</p></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="hero-glow" style="right:auto; left:-160px;"></div>
+  <div class="wrap">
+    <h2>Your next idea is one prompt away.</h2>
+    <a href="premium.html" class="btn btn-wave">Start creating free</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <svg class="logo-mark" viewBox="0 0 32 32" fill="none"><path d="M2 20C6 20 6 12 10 12C14 12 14 20 18 20C22 20 22 12 26 12C28 12 29 13 30 14" stroke="url(#g2)" stroke-width="2.4" stroke-linecap="round"/><defs><linearGradient id="g2" x1="2" y1="12" x2="30" y2="20"><stop stop-color="#7C6CF0"/><stop offset="1" stop-color="#4FD1E8"/></linearGradient></defs></svg>
+          Wavelet
+        </a>
+        <p>An AI platform for turning text and images into video, artwork, and voice — built for creators of every level.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#tools">Text to video</a>
+        <a href="#tools">Image to video</a>
+        <a href="#tools">Text to image</a>
+        <a href="premium.html">Premium</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Community hub</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Terms of service</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Content policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Wavelet. All rights reserved.</span>
+      <span>Made for people who create.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
